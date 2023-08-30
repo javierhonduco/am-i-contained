@@ -6,7 +6,13 @@ The aim of this code is to detect whether we are running inside of a pid namespa
 ## Build and run
 
 ```bash
-make && sudo ./main-static
+make && sudo ./main-static # should not panic
+```
+
+
+```bash
+sudo unshare --fork --pid --mount-proc
+sudo ./main-static # should panic
 ```
 
 ## Acknowledgements
