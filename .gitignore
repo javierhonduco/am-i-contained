@@ -1,0 +1,4 @@
+gotest
+main-static
+main.bpf.o
+output/*
